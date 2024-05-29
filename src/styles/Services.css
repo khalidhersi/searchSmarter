@@ -1,21 +1,21 @@
-.projects {
+.services {
     padding: 100px 0;
   }
   
-  .projects h2 {
+  .services h2 {
     font-size: 36px;
     color: #333;
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .projects__list {
+  .services__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
-  .projects__item {
+  .services__item {
     flex: 1;
     margin: 20px;
     padding: 20px;
@@ -24,13 +24,13 @@
     border-radius: 8px;
   }
   
-  .projects__item h3 {
+  .services__item h3 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
   }
   
-  .projects__item p {
+  .services__item p {
     font-size: 18px;
     color: #666;
   }

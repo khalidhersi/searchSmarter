@@ -1,70 +1,83 @@
+/* General header styles */
 .header {
-    background: #ff6347;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 4em;
-  }
-  
-  .header__title {
-    font-size: 24px;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 3em;
+}
+
+.logo__img {
+  width: 20em; /* Adjust logo size */
+  height: auto;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav a {
+  color: #000;
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+  color: #ff6347; /* Adjust the hover color */
+}
+
+.header__toggle {
+  display: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
   .header__nav {
-    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
-  
+
+  .header__nav.open {
+    max-height: 300px; /* Adjust height for the menu items */
+    opacity: 1;
+  }
+
   .header__nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
   }
-  
-  .header__nav a:hover {
-    text-decoration: underline;
-  }
-  
+
   .header__toggle {
-    display: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
+    display: block;
   }
-  .logo {
-    width: 25em; /* Adjust logo size */
-    height: auto;
-  }
-  
-  @media (max-width: 768px) {
-    .header__nav {
-      position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
-      background: #ff6347;
-      flex-direction: column;
-      align-items: center;
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.3s ease-in;
-    }
-  
-    .header__nav.open {
-      max-height: 200px;
-    }
-  
-    .header__nav a {
-      margin: 10px 0;
-    }
-  
-    .header__toggle {
-      display: block;
-    }
-  }
-  
+}
+
+/* Animation styles */
+.header__nav {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}

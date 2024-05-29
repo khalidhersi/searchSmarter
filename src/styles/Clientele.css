@@ -1,0 +1,37 @@
+.clientele {
+    padding: 100px 0;
+  }
+  
+  .clientele h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .clientele__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .clientele__item {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .clientele__item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .clientele__item p {
+    font-size: 18px;
+    color: #666;
+  }
+  
