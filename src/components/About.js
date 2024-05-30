@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/About.css';
 import avatar from '../assets/images/avatar.png';
+import Avatar from './Avatar';
 
 const About = () => {
   useEffect(() => {
@@ -17,9 +18,11 @@ const About = () => {
           <p>I am a full-stack developer with experience in building scalable web applications. 
             I have a strong background in both frontend and backend development.</p>
         </div>
-        <div className="home__image" data-aos="fade-left">
+        {/* <div className="home__image" data-aos="fade-left">
           <img src={avatar} alt="Profile" />
-        </div>
+        </div> */}
+                <Avatar/>
+
       </div>
     </section>
   );

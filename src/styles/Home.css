@@ -1,8 +1,10 @@
 .home {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 8em 0;
-    min-height: 85vh;
+    width: 50%;
+    /* min-height: 85vh; */
   }
   
   .home__intro {
@@ -22,7 +24,7 @@
     color: #666;
   }
   
-  .home__image {
+  /* .home__image {
     flex: 1;
     text-align: center;
   }
@@ -31,5 +33,5 @@
     max-width: 80%;
     height: auto;
     border-radius: 50%;
-  }
+  } */
   

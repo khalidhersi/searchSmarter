@@ -18,9 +18,9 @@ const Home = () => {
           My name is Mouhamad El-Masri, and I am the founder of SearchSmarter. With a passion for digital marketing and over four years of experience i
 </p>
         </div>
-        <div className="home__image" data-aos="fade-left">
+        {/* <div className="home__image" data-aos="fade-left">
           <img src={avatar} alt="Profile" />
-        </div>
+        </div> */}
       </div>
     </section>
   );
