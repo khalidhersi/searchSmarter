@@ -1,7 +1,15 @@
 .clientele {
-    padding: 100px 0;
+    /* was 100px */
+    padding: 50px 0;
+    background: #f9f9f9;
   }
-  
+
+  .clientele > .container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
+  }
+
   .clientele h2 {
     font-size: 36px;
     color: #333;
@@ -16,7 +24,7 @@
   }
   
   .clientele__item {
-    flex: 1;
+    flex: 1 1 45%; /* Two items per row with some space between */
     margin: 20px;
     padding: 20px;
     background: #fff;

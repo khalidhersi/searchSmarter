@@ -12,9 +12,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <main>
-        <Home />
-        <Home />
+      <main className='content'>
         <Home />
         <About />
         <Services />

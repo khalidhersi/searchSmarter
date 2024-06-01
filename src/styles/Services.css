@@ -1,5 +1,11 @@
 .services {
-    padding: 100px 0;
+    padding: 50px 0;
+  }
+
+  .services > .container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column; 
   }
   
   .services h2 {
@@ -11,17 +17,19 @@
   
   .services__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
   .services__item {
-    flex: 1;
+    flex: 1 1 45%; /* Two items per row with some space between */
     margin: 20px;
     padding: 20px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    height: fit-content;
   }
   
   .services__item h3 {

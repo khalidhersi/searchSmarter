@@ -11,8 +11,11 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Get in touch via email or social media.</p>
+        <h2>Get in touch</h2>
+        <p>We are determind to help you take your business to the next level
+          <br/> 
+          <br/> 
+          Opening hours 12-6pm</p>
         <form className="contact__form">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
