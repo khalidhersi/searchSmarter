@@ -73,7 +73,7 @@ const Services = () => {
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
         <h2 className="services__title">Our Services</h2>
-        <div className='two'>
+        {/* <div className='two'> */}
         <div className="services__list">
           {servicesData.map((service, index) => (
             <div key={index} className="services__item-wrapper">
@@ -84,7 +84,7 @@ const Services = () => {
                 <h3>{service.title}</h3>
               </div>
               {expandedService === index && (
-                <div className="services__details" data-aos="fade-up">
+                <div className="services__details" data-aos="fade-left">
                   <img src={service.image} alt={service.title} className="services__image" />
                   <h3>{service.title}</h3>
                   <p>{service.content}</p>
@@ -93,9 +93,11 @@ const Services = () => {
 
             </div>
           ))}                  
-        </div>{!expandedService && (
+        </div>
+        {/* {!expandedService && (
            <Avatar data-aos="fade-right" image={avatar3} direction={"left"}/>
-          )}</div>
+          )} */}
+          {/* </div> */}
       </div>
     </section>
   );
