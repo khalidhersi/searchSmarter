@@ -4,15 +4,15 @@ import 'aos/dist/aos.css';
 import '../styles/Avatar.css';
 
 const Avatar = (props) => {    
-const { image } = props ;
+const { image, direction } = props ;
 
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 3000 });
   }, []);
 
   return (
     <>
-        <div className="avatar__image" data-aos="fade-left">
+        <div className="avatar__image" data-aos={`fade-${direction}`}>
             <img src={image} alt="Profile" />
         </div>
     </>

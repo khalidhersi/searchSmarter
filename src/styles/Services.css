@@ -1,45 +1,97 @@
-.services {
+  /* Services.css */
+  .services {
     padding: 50px 0;
+    background-color: #f8f9fa;
   }
 
-  .services > .container {
+  .services .container {
+    text-align: center;
     height: fit-content;
-    display: flex;
-    flex-direction: column; 
+     display: flex;
+  flex-direction: column;
   }
-  
-  .services h2 {
+  .two{
+
+     display: flex;
+  flex-direction: row;
+  }
+
+  .services__title {
     font-size: 36px;
     color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
-  
+
   .services__list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    
   }
-  
+
+  .services__item-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
   .services__item {
-    flex: 1 1 45%; /* Two items per row with some space between */
-    margin: 20px;
+    flex: 0 0 30%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .services__item:hover {
+    background-color: #e0e0e0;
+  }
+
+  .expanded {
+    background-color: #d1d1d1;
+  }
+
+  .services__details {
+    width: 50%;
     padding: 20px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
     height: fit-content;
   }
-  
-  .services__item h3 {
+
+  .services__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+
+  .services__details h3 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
   }
-  
-  .services__item p {
-    font-size: 18px;
+
+  .services__details p {
+    font-size: 16px;
     color: #666;
+    line-height: 1.6;
   }
-  
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
