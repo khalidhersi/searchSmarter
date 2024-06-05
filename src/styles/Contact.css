@@ -6,6 +6,29 @@
 .contact > .container {
     height: fit-content;
   }
+
+  .contact__title{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .contact img {
+    width: 12em; /* Set the desired width */
+    object-fit: contain;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+   }
+
+   .contact__us{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .contact_info{
+    display: flex;
+    flex-direction: column;
+   }
   
   .contact h2 {
     font-size: 36px;

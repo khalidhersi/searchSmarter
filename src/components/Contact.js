@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/Contact.css';
+import Avatar from '../components/Avatar';
+import avatar4 from '../assets/images/avatar-4.png';
+import { IoMdCall } from "react-icons/io";
+import { MdAlternateEmail } from "react-icons/md";
 
 const Contact = () => {
   useEffect(() => {
@@ -11,11 +15,35 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
-        <h2>Get in touch</h2>
-        <p>We are determind to help you take your business to the next level
-          <br/> 
-          <br/> 
-          Opening hours 12-6pm</p>
+        <div className="contact__title">
+          <h2>Get in touch</h2>
+          <Avatar data-aos="fade-right" image={avatar4} direction={"left"}/> 
+        </div>
+        <div className="contact__us">
+          <p>Contact Us directly via email or phone 
+            <br />
+        We are determind to help you take your business to the next level
+        <br />
+        Or leave us your message using the form on the right</p>
+          </div>
+          <div className="contact_info">
+              <p className="">
+                <MdAlternateEmail
+                  className=""
+                  size={36}
+                />
+                <span>{"mdmfmk@.com"}</span>
+              </p>
+              <p className="">
+                <IoMdCall
+                  className="b"
+                  size={36}
+                />
+                <span>
+                  {"079 5485 444"}
+                </span>
+              </p>
+              </div>
         <form className="contact__form">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />

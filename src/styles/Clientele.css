@@ -1,45 +1,49 @@
 .clientele {
-    /* was 100px */
-    padding: 50px 0;
-    background: #f9f9f9;
-  }
+  padding: 50px 0;
+  /* background: #e6e6e6; */
+  background: #e3f1ff;
+}
 
-  .clientele > .container {
-    height: fit-content;
-    display: flex;
-    flex-direction: column; 
-  }
+.clientele > .container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .clientele h2 {
-    font-size: 36px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .clientele__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .clientele__item {
-    flex: 1 1 45%; /* Two items per row with some space between */
-    margin: 20px;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .clientele__item h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .clientele__item p {
-    font-size: 18px;
-    color: #666;
-  }
-  
+.clientele h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clientele__carousel {
+  width: 100%;
+  max-width: 80%;
+}
+
+.clientele__item {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.clientele__item h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.clientele__item p {
+  font-size: 18px;
+  color: #666;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: #333;
+}
