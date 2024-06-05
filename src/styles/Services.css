@@ -1,6 +1,10 @@
+/* Services.css */
 .services {
-  padding: 50px 0;
+  padding: 30px 0;
   background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .services .container {
@@ -9,57 +13,64 @@
   flex-direction: column;
   width: 100%;
   height: fit-content;
+
 }
 
 .services__title {
   font-size: 36px;
   color: #333;
-  margin-bottom: 40px;
+  margin-bottom: 0em;
 }
 
 .services__list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-.services__item-wrapper {
-  width: 100%;
-}
-
-.services__item {
+  width: 50%;
   display: flex;
-  padding: 10px 20px;
-  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  justify-content: center;
+  padding: 0 1em;
+}
+.service__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.services__item:hover {
-  background-color: #e0e0e0;
-}
-
-.expanded {
-  background-color: #d1d1d1;
-}
-
-.services__details {
-  width: 100%;
-  padding: 20px;
+.services__item {
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  opacity: 0;
-  animation: fadeIn 0.3s forwards;
+  margin: 1em;
+  flex: 1 1 33%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.services__item.expanded {
+  flex: 1 1 100%;
+  transform: scale(1.05);
+}
+
+.services__item-header {
+  padding: 1.5em;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0; 
+}
+
+.services__item h3 {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.services__details {
+  padding: 1.5em;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
 }
 
 .services__image {
@@ -69,26 +80,14 @@
   border-radius: 8px;
 }
 
-.services__details h3 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
 .services__details p {
-  font-size: 16px;
+  font-size: 1em;
   color: #666;
   line-height: 1.6;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
 @media (max-width: 768px) {
-  .services__list {
-    grid-template-columns: 1fr;
+  .services__item {
+    flex: 1 1 100%;
   }
 }

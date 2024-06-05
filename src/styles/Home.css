@@ -8,17 +8,18 @@
   .home__intro {
     flex: 1;
   }
+  
   .home__intro--text{
     
   }
   
   .home__intro h2 {
-    font-size: 36px;
+    font-size: 3em;
     color: #333;
   }
   
   .home__intro p {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #666;
   }
   

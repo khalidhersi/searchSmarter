@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/Services.css';
-import Avatar from './Avatar';
 import avatar3 from '../assets/images/avatar-3.png';
+import Avatar from './Avatar.js';
 
 const servicesData = [
   {
@@ -62,7 +62,7 @@ const Services = () => {
   const [expandedService, setExpandedService] = useState(null);
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 750 });
   }, []);
 
   const handleClick = (index) => {
@@ -72,33 +72,29 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
+
         <h2 className="services__title">Our Services</h2>
-        {/* <div className='two'> */}
+                        <div className='service__content'>
+
         <div className="services__list">
           {servicesData.map((service, index) => (
-            <div key={index} className="services__item-wrapper">
-              <div
-                className={`services__item ${expandedService === index ? 'expanded' : ''}`}
-                onClick={() => handleClick(index)}
-              >
+            <div key={index} className={`services__item ${expandedService === index ? 'expanded' : ''}`}>
+              <div className="services__item-header" onClick={() => handleClick(index)}>
                 <h3>{service.title}</h3>
               </div>
               {expandedService === index && (
-                <div className="services__details" data-aos="fade-left">
+                <div className="services__details">
                   <img src={service.image} alt={service.title} className="services__image" />
-                  <h3>{service.title}</h3>
                   <p>{service.content}</p>
                 </div>
               )}
-
             </div>
-          ))}                  
-        </div>
-        {/* {!expandedService && (
-           <Avatar data-aos="fade-right" image={avatar3} direction={"left"}/>
-          )} */}
-          {/* </div> */}
-      </div>
+          ))}
+          
+            </div><Avatar data-aos="fade-right" image={avatar3} direction={"left"}/> 
+          </div>
+
+        </div>          
     </section>
   );
 };

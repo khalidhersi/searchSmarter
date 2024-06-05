@@ -15,7 +15,8 @@ const Home = () => {
       <div className="container">
         <div className="home__intro" data-aos="fade-right">
           <h2>Welcome to SearchSmarter</h2>
-          <p className="home__intro--text">Welcome to SearchSmarter, where our mission is to elevate your brand through expert paid search and PPC support. My name is Mouhamad El-Masri, and I am the founder of SearchSmarter. With a passion for digital marketing and over four years of experience in the field, I am excited to bring our expertise to your business.
+          <p className="home__intro--text">Welcome to SearchSmarter, where our mission is to elevate your brand through expert paid search and PPC support.</p>
+          <p className="home__intro--text">My name is Mouhamad El-Masri, and I am the founder of SearchSmarter. With a passion for digital marketing and over four years of experience in the field, I am excited to bring our expertise to your business.
           </p>
         </div>
         <Avatar image={avatar1}/>

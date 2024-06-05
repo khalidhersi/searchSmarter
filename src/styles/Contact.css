@@ -2,6 +2,10 @@
     padding: 100px 0;
     background: #f9f9f9;
   }
+
+.contact > .container {
+    height: fit-content;
+  }
   
   .contact h2 {
     font-size: 36px;
