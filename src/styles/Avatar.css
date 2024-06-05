@@ -1,0 +1,9 @@
+.avatar__image {
+  flex: 1;
+  text-align: center;
+}
+
+.avatar__image img {
+  max-width: 100%;
+  height: auto;
+}

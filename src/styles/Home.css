@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 8em 0;
-    min-height: 85vh;
+    height: 100vh;
   }
   
   .home__intro {
@@ -28,8 +28,7 @@
   }
   
   .home__image img {
-    max-width: 80%;
+    max-width:100%;
     height: auto;
     border-radius: 50%;
   }
-  
