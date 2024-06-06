@@ -12,12 +12,10 @@ const About = () => {
 
   return (
     <section id="about" className="about">
-      <div className="container" data-aos="fade-up">
-        <div className="about__content">
-          <div className="image">
-          <Avatar image={avatar2} />
-          </div>
-          <div className="about__text" data-aos="fade-right">
+      <div className="container" >
+        <div className="about__content" data-aos="fade-right">
+          <Avatar  image={avatar2} />
+          <div className="about__text">
             <h2>About Me</h2>
             <div className="about__details">
               <p>I've had the privilege of working across a diverse range of industries, including ticket distribution, healthcare, beauty, theatre, tech/IT services, and musical instruments.</p>

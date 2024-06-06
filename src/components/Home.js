@@ -19,7 +19,7 @@ const Home = () => {
           <p className="home__intro--text">My name is Mouhamad El-Masri, and I am the founder of SearchSmarter. With a passion for digital marketing and over four years of experience in the field, I am excited to bring our expertise to your business.
           </p>
         </div>
-        <Avatar image={avatar1}/>
+        <Avatar direction={"left"} image={avatar1}/>
       </div>
     </section>
   );
