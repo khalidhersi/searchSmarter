@@ -17,7 +17,7 @@ const Contact = () => {
       <div className="container" data-aos="fade-up">
         <div className="contact__title">
           <h2>Get in touch</h2>
-          <Avatar data-aos="fade-right" image={avatar4} direction={"left"}/> 
+          <Avatar image={avatar4} direction={"up"}/> 
         </div>
         <div className="contact__us">
           <p>Contact Us directly via email or phone 
