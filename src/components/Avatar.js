@@ -13,7 +13,7 @@ const { image, direction } = props ;
   return (
     <>
         <div className="avatar__image" data-aos={`fade-${direction}`}>
-            <img src={image} alt="Profile" />
+            <img classname="img" src={image} alt="Profile" />
         </div>
     </>
   );

@@ -75,32 +75,32 @@ const Services = () => {
     setExpandedService(index === expandedService ? null : index);
   };
 
+ 
   return (
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
-
-        <h2 className="services__title">Our Services</h2>
-                        <div className='service__content'>
-
-        <div className="services__list">
-          {servicesData.map((service, index) => (
-            <div key={index} className={`services__item ${expandedService === index ? 'expanded' : ''}`}>
-              <div className="services__item-header" onClick={() => handleClick(index)}>
-                <h3>{service.title}</h3>
-                <img src={service.image} alt={service.title} className="services__image" />
-              </div>
-              {expandedService === index && (
-                <div className="services__details"> 
-                  <p>{service.content}</p>
+        <h2 className="services__title">Services</h2>
+        <div className="service__content">
+          <div className="services__list">
+            {servicesData.map((service, index) => (
+              <div key={index} className={`services__item ${expandedService === index ? 'expanded' : ''}`}>
+                <div className="services__item-header" onClick={() => handleClick(index)}>
+                  <h3>{service.title}</h3>
+                  <img src={service.image} alt={service.title} className="services__image" />
                 </div>
-              )}
-            </div>
-          ))}
-          
-            </div><Avatar data-aos="fade-right" image={avatar3} direction={"left"}/> 
+                {expandedService === index && (
+                  <div className="services__details" onClick={() => handleClick(index)}>
+                    <p>{service.content}</p>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
-
-        </div>          
+          <div className="services__avatar">
+            <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
