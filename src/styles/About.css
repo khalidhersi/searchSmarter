@@ -14,7 +14,7 @@
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  
+
 }
 
 .about__content {
@@ -45,4 +45,6 @@
 .about img {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);  
+    position: relative;
+    right: 6em;
   }
