@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../styles/Header.css';
-import logo from '../assets/images/logo-full.png';
+import logo from '../assets/images/logo-edit.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="container">
+      <div className="container">          
         <div className="logo">
           <img className="logo__img" src={logo} alt="Profile" />
         </div>
@@ -20,7 +20,7 @@ const Header = () => {
           <a href="#home" onClick={toggleNav}>Home</a>
           <a href="#about" onClick={toggleNav}>About us</a>
           <a href="#clientele" onClick={toggleNav}>Clientele</a>
-          <a href="#services" onClick={toggleNav}>What we offer</a>
+          <a href="#services" onClick={toggleNav}>Services</a>
           <a href="#contact" onClick={toggleNav}>Contact</a>
         </nav>
         <div className="header__toggle" onClick={toggleNav}>

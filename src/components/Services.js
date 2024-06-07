@@ -68,7 +68,7 @@ const Services = () => {
   const [expandedService, setExpandedService] = useState(null);
 
   useEffect(() => {
-    AOS.init({ duration: 750 });
+    AOS.init({ duration: 2000 });
   }, []);
 
   const handleClick = (index) => {
