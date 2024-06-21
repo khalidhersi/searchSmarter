@@ -19,7 +19,7 @@ const Header = () => {
         <nav className={`header__nav ${isOpen ? 'open' : ''}`}>
           <a href="#home" onClick={toggleNav}>Home</a>
           <a href="#about" onClick={toggleNav}>About us</a>
-          <a href="#clientele" onClick={toggleNav}>Clientele</a>
+          <a href="#clientele" onClick={toggleNav}>Clientele & Work History</a>
           <a href="#services" onClick={toggleNav}>Services</a>
           <a href="#contact" onClick={toggleNav}>Contact</a>
         </nav>
