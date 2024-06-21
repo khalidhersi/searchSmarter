@@ -16,23 +16,16 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
         <div className="contact__title">
-          <h2>Get in touch</h2>
-          <Avatar image={avatar4} direction={"up"}/> 
-        </div>
-        <div className="contact__us">
-          <p>Contact Us directly via email or phone 
-            <br />
-        We are determind to help you take your business to the next level
-        <br />
-        Or leave us your message using the form on the right</p>
-          </div>
+          <h2>Get in touch</h2>   
+           </div>    
+          <div className="contact__us">
           <div className="contact_info">
               <p className="">
                 <MdAlternateEmail
                   className=""
                   size={36}
                 />
-                <span>{"mdmfmk@.com"}</span>
+                <span>{"SearchSmarter@hotmail.com"}</span>
               </p>
               <p className="">
                 <IoMdCall
@@ -43,13 +36,17 @@ const Contact = () => {
                   {"079 5485 444"}
                 </span>
               </p>
-              </div>
+              </div>     
+                
+               <Avatar image={avatar4} direction={"up"}/> 
+
         <form className="contact__form">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
           <textarea placeholder="Your Message"></textarea>
           <button type="submit">Send Message</button>
         </form>
+        </div>
       </div>
     </section>
   );
