@@ -66,6 +66,7 @@ const servicesData = [
 
 const Services = () => {
   const [expandedService, setExpandedService] = useState(null);
+  const [avatarHidden, setAvatarHidden] = useState("");
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -73,8 +74,19 @@ const Services = () => {
 
   const handleClick = (index) => {
     setExpandedService(index === expandedService ? null : index);
+ 
   };
 
+  useEffect(() => {
+       if(expandedService ){
+    setAvatarHidden("hidden")
+    console.log(avatarHidden)
+    console.log(expandedService)
+  } else {
+    setAvatarHidden("")
+  }
+  }, [expandedService]);
+  
  
   return (
     <section id="services" className="services">
@@ -96,7 +108,7 @@ const Services = () => {
               </div>
             ))}
           </div>
-          <div className="services__avatar">
+          <div className={`services__avatar ${avatarHidden}`}>
             <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
           </div>
         </div>
