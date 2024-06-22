@@ -14,7 +14,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <div className="container" data-aos="fade-up">
+      <div className="container" data-aos="fade-down">
         <div className="contact__title">
           <h2>Get in touch</h2>   
            </div>    

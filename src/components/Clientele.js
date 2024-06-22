@@ -74,11 +74,11 @@ const Clientele = () => {
 
   return (
     <section id="clientele" className="clientele">
-      <div className="container" data-aos="fade-up">
+      <div className="container" >
         <h2>Clientele & Work History</h2>
         <Slider {...settings} className="clientele__carousel">
           {clienteleList.map((client, index) => (
-            <div key={index} className="clientele__item" data-aos="fade-right">
+            <div key={index} className="clientele__item" >
               <h3>{client.name}</h3>
               <p>{client.text}</p>
             </div>

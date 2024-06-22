@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container" >
-        <div className="about__content" data-aos="fade-right">
+        <div className="about__content" data-aos="fade-left">
           <Avatar  image={avatar2} />
           <div className="about__text">
             <h2>About Me</h2>

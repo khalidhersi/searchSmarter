@@ -67,53 +67,46 @@ const servicesData = [
 
 const Services = () => {
   const [expandedService, setExpandedService] = useState(null);
+  const [avatarHidden, setAvatarHidden] = useState("");
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
-
+  
   const handleClick = (index) => {
     setExpandedService(index === expandedService ? null : index);
   };
 
+useEffect(() => {
+    if(expandedService != null ){
+      setAvatarHidden("hidden");
+    } else{setAvatarHidden("")}
+  }, [expandedService]);
+
   return (
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
-        <div className="services__content" data-aos="fade-right">
-          <div className="services__text">
+        <div className="services__content" >
+          <div className="services__text"  data-aos="fade-right">
             <h2 className="services__title">Services</h2>
-              <div className="services__content">
-                <div className="services__list">
-                {/* <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} /> */}
-                    {servicesData.map((service, index) => (
-                      <AnimatedCard image={service.image} content={service.content} title={service.title} />
-                      // <div key={index} className={`services__item ${expandedService === index ? 'expanded' : ''}`}>
-                      //   <div className="services__item-header" onClick={() => handleClick(index)}>
-                      //     <h3>{service.title}</h3>
-                      //     <img src={service.image} alt={service.title} className="services__image" />
-                      //   </div>
-                      //   {expandedService === index && (
-                      //     <div className="services__details">
-                      //       <p>{service.content}</p>
-                      //     </div>
-                      //   )}
-                      // </div>
-                    ))}         
-                  {/* <div className="services__avatar">
-                    <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
-                  </div> */}
-                </div>
-              </div>
+            <div className="services__list">
+              {servicesData.map((service, index) => (
+                <AnimatedCard 
+                  key={index}
+                  image={service.image} 
+                  content={service.content} 
+                  title={service.title} 
+                  isExpanded={expandedService === index}
+                  onClick={() => handleClick(index)}
+                />
+              ))}
             </div>
-            <div className="services__avatar">
-            <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
+          </div>
+
+            <div className={`services__avatar ${avatarHidden}`} data-aos="fade-left">
+              <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
             </div>
+
         </div>
       </div>
     </section>
