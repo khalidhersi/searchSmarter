@@ -79,10 +79,6 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
-      <div className="services__content" data-aos="fade-right">
-
-      
-      <div className="services__text">
         <h2 className="services__title">Services</h2>
         <div className="service__content">
         {/* <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
@@ -108,12 +104,10 @@ const Services = () => {
               // </div>
             ))}         
               </div>
-          {/* <div className="services__avatar">
+          <div className="services__avatar">
             <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
-          </div> */}
+          </div>
         </div>
-        </div><Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
-      </div>
       </div>
     </section>
   );
