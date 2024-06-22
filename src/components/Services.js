@@ -92,9 +92,7 @@ const Services = () => {
                 <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
                 <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} /> */}
                     {servicesData.map((service, index) => (
-                      <div className={`${expandedService === index ? 'expanded' : ''}`}>
                       <AnimatedCard image={service.image} content={service.content} title={service.title} />
-                      </div>
                       // <div key={index} className={`services__item ${expandedService === index ? 'expanded' : ''}`}>
                       //   <div className="services__item-header" onClick={() => handleClick(index)}>
                       //     <h3>{service.title}</h3>
@@ -113,7 +111,9 @@ const Services = () => {
                 </div>
               </div>
             </div>
+            <div className="services__avatar">
             <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
+            </div>
         </div>
       </div>
     </section>
