@@ -79,34 +79,41 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
-        <h2 className="services__title">Services</h2>
-        <div className="service__content">
-        {/* <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-        <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-        <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-        <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-        <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-        <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
-        <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} /> */}
-        <div className="services__list">
-            {servicesData.map((service, index) => (
-              <AnimatedCard image={service.image} content={service.content} title={service.title} />
-              // <div key={index} className={`services__item ${expandedService === index ? 'expanded' : ''}`}>
-              //   <div className="services__item-header" onClick={() => handleClick(index)}>
-              //     <h3>{service.title}</h3>
-              //     <img src={service.image} alt={service.title} className="services__image" />
-              //   </div>
-              //   {expandedService === index && (
-              //     <div className="services__details">
-              //       <p>{service.content}</p>
-              //     </div>
-              //   )}
-              // </div>
-            ))}         
+        <div className="services__content" data-aos="fade-right">
+          <div className="services__text">
+            <h2 className="services__title">Services</h2>
+              <div className="services__content">
+                <div className="services__list">
+                {/* <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
+                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
+                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
+                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
+                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
+                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} />
+                <AnimatedCard image={servicesData[3].image} content={servicesData[3].content} title={servicesData[3].title} /> */}
+                    {servicesData.map((service, index) => (
+                      <div className={`${expandedService === index ? 'expanded' : ''}`}>
+                      <AnimatedCard image={service.image} content={service.content} title={service.title} />
+                      </div>
+                      // <div key={index} className={`services__item ${expandedService === index ? 'expanded' : ''}`}>
+                      //   <div className="services__item-header" onClick={() => handleClick(index)}>
+                      //     <h3>{service.title}</h3>
+                      //     <img src={service.image} alt={service.title} className="services__image" />
+                      //   </div>
+                      //   {expandedService === index && (
+                      //     <div className="services__details">
+                      //       <p>{service.content}</p>
+                      //     </div>
+                      //   )}
+                      // </div>
+                    ))}         
+                  {/* <div className="services__avatar">
+                    <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
+                  </div> */}
+                </div>
               </div>
-          <div className="services__avatar">
+            </div>
             <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
-          </div>
         </div>
       </div>
     </section>
