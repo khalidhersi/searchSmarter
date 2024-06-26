@@ -17,8 +17,10 @@ const Contact = () => {
       <div className="container" data-aos="fade-down">
         <div className="contact__title">
           <h2>Get in touch</h2>   
-           </div>    
-          <div className="contact__us">
+        </div>   
+
+          <div className="contact__us">        
+            <div className="contact__middle">
           <div className="contact_info">
               <p className="">
                 <MdAlternateEmail
@@ -38,15 +40,16 @@ const Contact = () => {
               </p>
               </div>     
                 
-               <Avatar image={avatar4} direction={"up"}/> 
-
-        <form className="contact__form">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        </div>
+              <Avatar image={avatar4} direction={"up"}/> 
+</div>
+          <form className="contact__form">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          </div>
+        
       </div>
     </section>
   );
