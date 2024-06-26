@@ -111,7 +111,7 @@
   visibility: hidden;
 }
 
-/* 
+
 @media (max-width: 1400px) {
   .services .container {
     padding-left: 5em;
@@ -146,4 +146,4 @@
   .services__avatar {
    display: none;
   }
-} */
+}
