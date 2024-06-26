@@ -1,5 +1,4 @@
- .card__list{
- 
+.card__list{
 }
 
 .card {
@@ -8,7 +7,7 @@
     background-color: #fff;
     border-radius: 0.2rem;
     cursor: pointer;
-    padding: 1em 2em;
+    padding: 1em;
     background-color: #e3f1ff;
     border-bottom: 1px solid #ddd;
   }
@@ -20,9 +19,9 @@
     align-items: center;
     position: absolute;
     width: fit-content;
-    height: 60%;
+    height: fit-content;
     left: 60%;
-    top: 28%;
+    top: 27%;
     right: 0;
     bottom: 0;
   }
@@ -32,7 +31,7 @@
   }
   
   .card h3 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
   }
@@ -44,10 +43,11 @@
   }
   
   .card img {
-    border-radius: 0.5rem;
-    width: 4em;
-    height: 4em;
-    object-fit: contain;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      width: 4em;
+      height: 4em;
+      object-fit: contain;
   }
   
   /* .btn-container {

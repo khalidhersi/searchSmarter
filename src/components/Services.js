@@ -87,7 +87,7 @@ useEffect(() => {
     <section id="services" className="services">
       <div className="container" data-aos="fade-up">
         <div className="services__content" >
-          <div className="services__text"  data-aos="fade-right">
+          <div className="services__text" >
             <h2 className="services__title">Services</h2>
             <div className="services__list">
               {servicesData.map((service, index) => (
