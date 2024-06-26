@@ -103,8 +103,8 @@ useEffect(() => {
             </div>
           </div>
 
-            <div className={`services__avatar ${avatarHidden}`} data-aos="fade-left">
-              <Avatar data-aos="fade-right" image={avatar3} direction={"left"} />
+            <div className={`services__avatar ${avatarHidden}`} >
+              <Avatar data-aos="fade-right" image={avatar3} />
             </div>
 
         </div>
