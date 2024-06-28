@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/searchSmarter/static/css/main.17921b3a.css",
-    "main.js": "/searchSmarter/static/js/main.7700bcff.js",
+    "main.css": "/searchSmarter/static/css/main.cecde2e5.css",
+    "main.js": "/searchSmarter/static/js/main.13fb755e.js",
     "static/media/avatar-3.png": "/searchSmarter/static/media/avatar-3.aab7edbe1aaf98a610c2.png",
     "static/media/avatar-1.png": "/searchSmarter/static/media/avatar-1.bfce7d81d87c0bea2327.png",
     "static/media/avatar-4.png": "/searchSmarter/static/media/avatar-4.e7651e37ddb767a0d535.png",
     "static/media/avatar-2.png": "/searchSmarter/static/media/avatar-2.84d23ffb0203009f1ee7.png",
+    "static/media/phone.gif": "/searchSmarter/static/media/phone.7fd8ed1f2ed070d0a2d3.gif",
+    "static/media/email.gif": "/searchSmarter/static/media/email.d2187c15589e3c9e9a5a.gif",
     "static/media/logo-edit.png": "/searchSmarter/static/media/logo-edit.7c7014fc5c314d0d817c.png",
     "static/media/cloud_optimization_ai.png": "/searchSmarter/static/media/cloud_optimization_ai.1bef93090bfdb7f227aa.png",
     "static/media/cloud_audit_logs.png": "/searchSmarter/static/media/cloud_audit_logs.29764f5ed715c7676b17.png",
@@ -14,11 +16,11 @@
     "static/media/slick.ttf": "/searchSmarter/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/searchSmarter/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/searchSmarter/index.html",
-    "main.17921b3a.css.map": "/searchSmarter/static/css/main.17921b3a.css.map",
-    "main.7700bcff.js.map": "/searchSmarter/static/js/main.7700bcff.js.map"
+    "main.cecde2e5.css.map": "/searchSmarter/static/css/main.cecde2e5.css.map",
+    "main.13fb755e.js.map": "/searchSmarter/static/js/main.13fb755e.js.map"
   },
   "entrypoints": [
-    "static/css/main.17921b3a.css",
-    "static/js/main.7700bcff.js"
+    "static/css/main.cecde2e5.css",
+    "static/js/main.13fb755e.js"
   ]
 }
