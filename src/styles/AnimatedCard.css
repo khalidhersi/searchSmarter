@@ -118,3 +118,29 @@
       bottom: 0;
     }
   }
+
+  @media (max-width: 768px) {  
+    .card {
+      width: auto;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      padding: 1em;
+      background-color: #e3f1ff;
+      border-bottom: 1px solid #ddd;
+    }
+    .expanded{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      height: fit-content;
+      left: 0;
+      top: 20%;
+      right: 0;
+      bottom: 0;
+    }
+  }
