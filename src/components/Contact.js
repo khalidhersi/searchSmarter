@@ -26,11 +26,11 @@ const Contact = () => {
             <div className="contact__middle">
           <div className="contact_info">
               <div className="getInTouch">
-              <img className='getInTouch__image' src={email} alt="email image"/>
+              <img className='getInTouch__image' src={email} alt="email"/>
                 <span>{"SearchSmarter@hotmail.com"}</span>
               </div>
               <div className="getInTouch">
-              <img className='getInTouch__image' src={phone} alt="phone image"/>
+              <img className='getInTouch__image' src={phone} alt="phone"/>
                 <span>
                   {"079 5485 444"}
                 </span>
