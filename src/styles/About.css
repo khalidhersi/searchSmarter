@@ -121,6 +121,10 @@
     
     }
     
+    .about__text {
+      padding-right: 0em;
+    }
+
     .about__content {
       display: flex;
       flex-direction: column-reverse;

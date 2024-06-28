@@ -138,5 +138,20 @@
       align-items: center;
     }
 
+    .getInTouch{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1em;
+    }
+    .getInTouch__image{
+      width: 2em; 
+      height: 2em;
+      object-fit: contain;
+      padding-right: 0.5em;
+    }
+    .form__text{
+      font-size: 1.2em;
+    }
   }
   
