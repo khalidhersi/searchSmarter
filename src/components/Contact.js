@@ -4,8 +4,6 @@ import 'aos/dist/aos.css';
 import '../styles/Contact.css';
 import Avatar from '../components/Avatar';
 import avatar4 from '../assets/images/avatar-4.png';
-import { IoMdCall } from "react-icons/io";
-import { MdAlternateEmail } from "react-icons/md";
 import email from "../assets/images/email.gif";
 import phone from "../assets/images/phone.gif";
 
