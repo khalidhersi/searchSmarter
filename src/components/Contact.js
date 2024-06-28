@@ -6,6 +6,9 @@ import Avatar from '../components/Avatar';
 import avatar4 from '../assets/images/avatar-4.png';
 import { IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
+import email from "../assets/images/email.gif";
+import phone from "../assets/images/phone.gif";
+
 
 const Contact = () => {
   useEffect(() => {
@@ -22,31 +25,26 @@ const Contact = () => {
           <div className="contact__us">        
             <div className="contact__middle">
           <div className="contact_info">
-              <p className="">
-                <MdAlternateEmail
-                  className=""
-                  size={36}
-                />
+              <div className="getInTouch">
+              <img className='getInTouch__image' src={email} alt="email image"/>
                 <span>{"SearchSmarter@hotmail.com"}</span>
-              </p>
-              <p className="">
-                <IoMdCall
-                  className="b"
-                  size={36}
-                />
+              </div>
+              <div className="getInTouch">
+              <img className='getInTouch__image' src={phone} alt="phone image"/>
                 <span>
                   {"079 5485 444"}
                 </span>
-              </p>
+              </div>
               </div>     
-                
-              <Avatar image={avatar4} direction={"up"}/> 
-</div>
+              <div className="contact_avatar_image">
+                <Avatar image={avatar4} direction={"up"}/>
+              </div>
+          </div>
           <form className="contact__form">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+            <input className='form__text' type="text" placeholder="Your Name" />
+            <input className='form__text' type="email" placeholder="Your Email" />
+            <textarea className='form__text' placeholder="Your Message"></textarea>
+            <button className='form__text' type="submit">Send Message</button>
           </form>
           </div>
         

@@ -1,6 +1,7 @@
 .contact {
     padding: 2em 0;
     background: #e3f1ff;
+    font-size: 1.2em;
   }
 
 .contact > .container {
@@ -24,7 +25,7 @@
     height: fit-content;
   }
 
-  .contact img {
+  .contact_avatar_image img {
     width: 20em; 
     object-fit: contain;
     -webkit-transform: scaleX(-1);
@@ -88,6 +89,22 @@
   
   .contact__form button:hover {
     background: #e55347;
+  }
+
+  .getInTouch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+  }
+  .getInTouch__image{
+    width: 3em; 
+    height: 3em;
+    object-fit: contain;
+    padding-right: 0.5em;
+  }
+  .form__text{
+    font-size: 1.2em;
   }
   
   @media (max-width: 1200px) {
