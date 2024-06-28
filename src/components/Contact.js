@@ -25,12 +25,12 @@ const Contact = () => {
           <div className="contact_info">
               <div className="getInTouch">
               <img className='getInTouch__image' src={email} alt="email"/>
-                <span>{"SearchSmarter@hotmail.com"}</span>
+                <span>SearchSmarter@hotmail.com</span>
               </div>
               <div className="getInTouch">
               <img className='getInTouch__image' src={phone} alt="phone"/>
                 <span>
-                  {"079 5485 444"}
+                  079 5485 444
                 </span>
               </div>
               </div>     
