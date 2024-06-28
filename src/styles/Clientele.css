@@ -41,7 +41,7 @@
   text-align: center;
   margin: 0 0.5em; /* Adds margin to each item */
   box-sizing: border-box;
-  border: 2px solid #0087ee;
+  border: 5px solid #e3f1ff;
   height: fit-content;
 }
 
