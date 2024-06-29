@@ -16,7 +16,7 @@ const About = () => {
         <div className="about__content" data-aos="fade-left">
           <Avatar  image={avatar2} />
           <div className="about__text">
-            <h2>About Me</h2>
+            <h2>About Us</h2>
             <div className="about__details">
               <p>Elevate your brand through expert paid search and social media support with SearchSmarter. With over four years of experience in digital marketing, we are confident that our expertise can elevate your business to the next level.</p>
               <p>We have worked across diverse industries, including ticket distribution, healthcare, beauty, theatre, tech/IT services, and musical instruments. Our marketing journey has given us a deep understanding of both B2B and B2C landscapes. SearchSmarter specialises in paid search strategies and have a strong background in SEO, e-commerce, and advertising platforms like Google Ads, Microsoft Ads, and Meta Ads.</p>

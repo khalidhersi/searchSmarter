@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="contact_info">
               <div className="getInTouch">
               <img className='getInTouch__image' src={email} alt="email"/>
-                <span>SearchSmarter@hotmail.com</span>
+                <span>searchsmarter@outlook.com</span>
               </div>
               <div className="getInTouch">
               <img className='getInTouch__image' src={phone} alt="phone"/>

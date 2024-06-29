@@ -74,7 +74,7 @@ const Clientele = () => {
   return (
     <section id="clientele" className="clientele">
       <div className="container" >
-        <h2>Clientele & Work History</h2>
+        <h2>Clientele</h2>
         <Slider {...settings} className="clientele__carousel">
           {clienteleList.map((client, index) => (
             <div key={index} className="clientele__item" >
