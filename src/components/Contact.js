@@ -83,7 +83,7 @@ const Contact = () => {
               <div className="getInTouch">
               <img className='getInTouch__image' src={phone} alt="phone"/>
                 <span>
-                  079 5485 444
+                  074 1806 4994
                 </span>
               </div>
               </div>     
